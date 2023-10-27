@@ -7,12 +7,8 @@ const Main = styled.main`
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  height: 100vh;
+  height: 70vh;
   font-family: Roboto, sans-serif;
-`;
-
-const Background = styled.div`
-  background: #222;
 `;
 
 const Header = styled.header`
@@ -28,7 +24,7 @@ const Footer = styled.footer`
   text-align: center;
   padding: 20px;
   font-size: 24px;
-  font-family: Roboto, sans-serif;
+  font-family: "Lato", sans-serif;
 `;
 
 const Ancor = styled.a`
@@ -37,11 +33,15 @@ const Ancor = styled.a`
   font-weight: bold;
 `;
 
+const H1 = styled.h1`
+  font-family: "Lato", sans-serif;
+`;
+
 function App() {
   return (
-    <Background>
+    <>
       <Header>
-        <h1>Calculadora NS</h1>
+        <H1>Calculadora NS</H1>
       </Header>
       <Main>
         <Calc />
@@ -55,7 +55,7 @@ function App() {
           © {new Date().getFullYear()}
         </p>
       </Footer>
-    </Background>
+    </>
   );
 }
 
